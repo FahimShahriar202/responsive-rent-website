@@ -22,9 +22,9 @@
 
 
 <!-- body -->
-<body class="max-w-screen-xl mx-auto px-8">
+<body class="max-w-screen-xl mx-auto ">
 
-  <header class="max-w-screen-xl mx-auto">
+  <header class="max-w-screen-xl mx-auto px-8">
   <!--navbar-->
   <div class="navbar bg-base-100">
       <div class="navbar-start">
@@ -38,7 +38,7 @@
         </a>
       </div>
     
-      <!-- Navbar center (menu links) hidden on mobile -->
+      <!-- Navbar center hidden on mobile -->
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-2">
           <li><a>Home</a></li>
@@ -70,13 +70,7 @@
           <!-- hamburger end -->
 
           </div>
-          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a><div class='font-semibold'>Home</div></a></li>
-            <li><a>Services</a></li>
-            <li><a>Portfolio</a></li>
-            <li><a>Blogs</a></li>
-            <li><a>Contact Us</a></li>
-          </ul>
+
         </div>
 
 
@@ -103,7 +97,14 @@
     </div>
     
     
-  <!-- section1 -->
+
+
+  </header>
+
+
+
+  <main>
+      <!-- section1 -->
    <section>
     <!-- image -->
     <div class="flex items-center justify-center">
@@ -134,18 +135,72 @@
           <i class="fa-solid fa-arrow-right"></i>
         </div>
       </a>
-     </div>
-
-
-
-
-
-
-
+     </div> <br><br><br>
 
    </section>
 
-  </header>
+
+
+   <!-- section2 -->
+    <section class="flex justify-center items-center  min-h-screen bg-gray-100 bg-rounded mx-auto px-8">
+
+      <!-- left side -->
+      <div class="flex flex-wrap w-full max-w-8xl h-auto lg:h-4/5">
+        <!-- pechano arrow hidden on mobile -->
+        <img src="assets/Vector.png" alt="Description" class="absolute w-15 h-10 hidden sm:block" />
+
+        <div class="flex flex-col lg:flex-row w-full mt-5">
+          <!-- spaces -->
+          <div class="w-full lg:w-1/2 flex flex-col justify-center items-center lg:items-start space-y-8 p-8 ">
+            <!-- Button -->
+            <button class="btn w-32 h-12 flex  justify-center items-center bg-white shadow-lg rounded-3xl">
+              <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-arrow-right text-base"></i>
+                <p class="text-base">About Us</p>
+              </div>
+            </button>
+            <!-- small text -->
+            <p class="font-extrabold text-4xl text-center">
+              We design thoughtful,<br> livable spaces
+            </p>
+            <p class="font-normal text-center">
+              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood and sleek metal accents.
+            </p>
+            <!-- Cards -->
+            <div class="flex flex-col space-y-4 ">
+              <!-- Card 1 -->
+              <div class="flex justify-center  bg-white shadow-lg rounded-lg overflow-hidden ">
+                <div class="flex items-center "><img class="w-30 h-20 object-cover" src="assets/commercial.png" alt=""></div>
+                <div class="w-2/3 p-4 ">
+                  <h3 class="text-lg font-extrabold">Commercial</h3>
+                  <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+              </div>
+              <!-- Card 2 -->
+              <div class="flex justify-center bg-white shadow-lg rounded-lg overflow-hidden">
+                <div class="flex items-center"><img class="w-30 h-20 object-cover" src="assets/residential.png" alt=""></div>
+                <div class="w-2/3 p-4">
+                  <h3 class="text-lg font-extrabold">Residential</h3>
+                  <p class="text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+      <!-- right side -->
+      <div class="w-full lg:w-1/2 flex items-center justify-center  mt-8">
+        <img class="w-full h-auto " src="assets/Rectangle.png" alt="">
+      </div>
+
+
+    </section>
+
+
+  </main>
+
+  
+
   
 </body>
 </html>
