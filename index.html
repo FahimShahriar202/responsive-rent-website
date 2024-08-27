@@ -19,60 +19,97 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body>
-  <header class="max-w-screen-xl mx-auto px-10 ">
-  <!-- navbar -->
+
+
+<!-- body -->
+<body class="max-w-screen-xl mx-auto px-8">
+
+  <header class="max-w-screen-xl mx-auto">
+  <!--navbar-->
   <div class="navbar bg-base-100">
-    <div class="navbar-start">
-      <!-- hamburger start -->
-      <div class="dropdown">
-        <!-- hamburger icon -->
-        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="h-5 w-5"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h8m-8 6h16" />
-          </svg>
-        </div>
-        <!-- hamburger end -->
+      <div class="navbar-start">
+        <!-- Logo -->
+        <a class="btn btn-ghost text-3xl font-bold">
+          <div class="flex items-center justify-center w-10 h-10 rounded-full bg-[#ABEF5F] -rotate-45">
+            <!-- arrow logo -->
+            <i class="fa-solid fa-arrow-right"></i>
+          </div>
+          Rinterio
+        </a>
       </div>
-      <a class="btn btn-ghost font-bold text-3xl "> 
-        <!-- arrow logo -->
-        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-lime-400 -rotate-45">
-            <i class="fa-solid fa-arrow-right"></i> </div>
-        Rinterio</a>
-    </div>
-    <div class="navbar-center hidden mr-10 lg:flex">
-      <ul class="menu menu-horizontal px-1 text-[#737373]">
-          <li ><a ><div class="text-[#1C1C1C]">Home</div> </a></li>
+    
+      <!-- Navbar center (menu links) hidden on mobile -->
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-2">
+          <li><a>Home</a></li>
           <li><a>Services</a></li>
           <li><a>Portfolio</a></li>
           <li><a>Blogs</a></li>
           <li><a>Contact Us</a></li>
-      </ul>
-    </div>
-    <div class="navbar-end flex space-x-5">
-        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-slate-50 shadow">
-        <i class="fa-solid fa-magnifying-glass"></i> </div>
-        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-slate-50 shadow">
-        <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-      
-        <a class="btn bg-lime-400 text-lg font-500">Book Consult 
-        <div class="flex items-center justify-center w-8 h-8 rounded-full bg-black text-white -rotate-45">
-            <i class="fa-solid fa-arrow-right"></i></div>
-    </a>
-    </div>
-  </div>
+        </ul>
+      </div>
+    
+      <!-- Navbar end (hamburger icon for mobile, search, cart, button) -->
+      <div class="navbar-end flex lg:space-x-5">
+        <!--Hamburger -->
+        <div class="dropdown lg:hidden">
+          <div tabindex="0" role="button" class="btn btn-ghost" id="menuToggle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
 
-  <!-- navbar done -->
+          <!-- hamburger end -->
+
+          </div>
+          <ul tabindex="0" class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+            <li><a><div class='font-semibold'>Home</div></a></li>
+            <li><a>Services</a></li>
+            <li><a>Portfolio</a></li>
+            <li><a>Blogs</a></li>
+            <li><a>Contact Us</a></li>
+          </ul>
+        </div>
+
+
+        <!-- (search, cart, book consult button) hidden on mobile -->
+        <div class="hidden lg:flex items-center space-x-5">
+          <!-- search -->
+          <div class="flex items-center justify-center w-10 h-10 rounded-full bg-slate-50 shadow">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <!-- shopping cart -->
+          <div class="flex items-center justify-center w-10 h-10 rounded-full bg-slate-50 shadow ">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </div>
+          <a class="btn bg-[#ABEF5F] font-500 text-lg  rounded-3xl">
+            Book Consult
+            <div class="flex items-center justify-center w-8 h-8 rounded-full bg-black text-white -rotate-45">
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    
+  <!-- section1 -->
+   <section>
+    <div>
+     <!-- image -->
+     <img src="assets/banner.png" alt="">
+    </div>
+
+
+   </section>
 
   </header>
   
